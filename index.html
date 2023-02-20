@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Menú con botones apilados</title>
+	<title>Menú con botones personalizados</title>
 	<style>
 		.btn-container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 		}
-		
 		.btn {
-			padding: 10px;
+			padding-left: 35px;
+			padding-right: 35px;
+			padding-top: 20px;
+			padding-bottom: 20px;
 			margin: 10px;
-			background-color: #4CAF50;
+			background-color: #0839c0;
 			color: white;
-			border: none;
-			border-radius: 5px;
+			border-radius: 10px;
 			cursor: pointer;
-			font-size: 16px;
+			font-size: 24px;
+			text-align: center;
+			text-decoration: none;
 		}
-		
 		.btn:hover {
-			background-color: #3e8e41;
+			background-color: #0f71e0;
 		}
+		.header {
+			background-color: #f2f2f2;
+			padding: 20px;
+			text-align: center;
+			margin-bottom: 30px;
+			border: 3px solid black;
+		}
+		h1 {
+			font-size: 40px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 18px;
+			margin: 0;
+		}
+	</style>
 	</style>
 </head>
 <body>
+	<div class="header">
+		<h1>Lab. Lenguage de Programación III</h1>
+		<p>Dariyak Jovanny Sanquintin Rodriguez | 100455600 | Licenciatura en informatica</p>
+	</div>
 	<div class="btn-container">
-		<button class="btn" onclick="location.href='Practica 1/index.html'">Practica 1</button>
-		<button class="btn" onclick="location.href='Practica 2/index.html'">Practica 2</button>
-		<button class="btn" onclick="location.href='servicios.html'">Practica 3</button>
-		<button class="btn" onclick="location.href='contacto.html'">Practica 4</button>
+		<a href="Practica 1/index.html" class="btn">Practica 1</a>
+		<a href="Practica 2/index.html" class="btn">Practica 2</a>
 	</div>
 </body>
 </html>
