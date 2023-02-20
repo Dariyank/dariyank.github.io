@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>102 etiquetas HTML</title>
+	<style>
+		body {
+			counter-reset: mi-contador;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #dfd9d9;
+			border-radius: 10px;
+			padding: 20px;
+			margin-bottom: 15px;
+		}
+		header h1 {
+			font-size: 36px;
+		}
+		header p {
+			font-size: 18px;
+		}
+		section {
+			background-color: #b4b4b4;
+			border-radius: 10px;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		section h2 {
+			font-size: 24px;
+			font-family: Arial, sans-serif;
+			margin-bottom: 10px;
+		}
+		hr {
+			border-width: 2px;
+		}
+		ul{
+			list-style-type: none;
+		}
+		li::before {
+			margin-right: 13px;
+			counter-increment: mi-contador;
+			content: counter(mi-contador) "-";
+			float: left;
+		}
+		listing {
+			font-family: Arial, sans-serif;
+		}
+		.left-div, .right-div {
+			display: inline-block;
+			vertical-align: top;
+			padding: 5px;
+			border-radius: 10px;
+			display: inline-block;
+			width: 45%; /* Ajusta el ancho según tus necesidades */
+		}
+		.left-div {
+			background-color: #ccc;
+		}
+		.right-div {
+			background-color: #eee;
+		}
+		table {
+			width: 80%;
+			margin: 20px 10%;
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 8px;
+			width: 13%;
+			text-align: center;
+		}
+		th {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>102 etiquetas HTML</h1>
+		<p>En esta página se explican 102 etiquetas HTML junto con su descripción y un ejemplo de uso.</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Tipo de documento</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;!DOCTYPE&gt;</h3>
+					<p>Indica al navegador web la versión de HTML utilizada en el documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							&lt;!DOCTYPE html&gt;
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;html&gt;</h3>
+					<p>Es la etiqueta raíz de un documento HTML y se utiliza para envolver todo el contenido HTML de una página</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;html&gt; code &lt;/html&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Etiquetas de texto</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;p&gt;</h3>
+					<p>Define un párrafo de texto.</p>
+					<p>Ejemplo: 
+						 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Este es un párrafo de texto.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;h1&gt; - &lt;h6&gt;</h3>
+					<p>Define encabezados de diferentes niveles (del 1 al 6).</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;h1&gt;Este es un encabezado principal&lt;/h1&gt;
+	&lt;h2&gt;Este es un encabezado secundario&lt;/h2&gt;
+	&lt;h3&gt;Este es un encabezado de tercero&lt;/h3&gt;
+	&lt;h4&gt;Este es un encabezado de cuarto&lt;/h4&gt;
+	&lt;h5&gt;Este es un encabezado de quinto&lt;/h5&gt;
+	&lt;h6&gt;Este es un encabezado de sexto&lt;/h6&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<h1>Este es un encabezado principal</h1>
+							<h2>Este es un encabezado secundario</h2>
+							<h3>Este es un encabezado de tercero</h3>
+							<h4>Este es un encabezado de cuarto</h4>
+							<h5>Este es un encabezado de quinto</h5>
+							<h6>Este es un encabezado de sexto</h6>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;b&gt; y &lt;strong&gt;</h3>
+					<p>Ambos definen texto en negrita.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;b&gt;Este texto está en negrita&lt;/b&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<b>Este texto está en negrita</b>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;i&gt; y &lt;em&gt;</h3>
+					<p>Ambos definen texto en cursiva.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;i&gt;Este texto está en cursiva&lt;/i&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<i>Este texto está en cursiva</i>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;u&gt; y &lt;s&gt;</h3>
+					<p>Definen texto subrayado y tachado, respectivamente.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;u&gt;Este texto está subrayado&lt;/u&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<u>Este texto está subrayado</u>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;area&gt;</h3>
+					<p>define un área dentro de un mapa de imagen (un mapa de imagen 
+					es una imagen con áreas en las que se puede hacer clic).</p>
+					<p>Ejemplo:  
+						<div class="left-div">
+							<listing>
+	&lt;area&gt;informacion de area&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;br&gt;</h3>
+					<p>Inserta un salto de línea.</p>
+					<p>Ejemplo:  
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;Este es un texto.&lt;br&gt; Este es otro texto.&lt;/p&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Este es un texto.<br> Este es otro texto.</p>
+						</div> 
+					</p>
+				</li>
+				<li>
+					<h3>&lt;hr&gt;</h3>
+					<p>Inserta una línea horizontal.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;hr&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<hr style="border-width: 5px; color: black;">
+						</div>  
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Etiquetas de enlaces e imágenes</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;a&gt;</h3>
+					<p>Define un enlace a otra página web.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;a href="https://www.ejemplo.com"&gt;Este es un enlace&lt;/a&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<a href="https://www.ejemplo.com">Este es un enlace</a>
+						</div>  
+					</p>
+				</li>
+				<li>
+					<h3>&lt;img&gt;</h3>
+					<p>Inserta una imagen en la página web.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;img src="ruta/a/la/imagen.jpg" alt="Texto alternativo"&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<img src="imagen.png" alt="Texto alternativo" style="width: 100px;">
+						</div>  
+					</p>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Etiquetas de listas</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;ul&gt;</h3>
+					<p>Define una lista no ordenada.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;ul&gt;
+		&lt;li&gt;Elemento 1&lt;/li&gt;
+		&lt;li&gt;Elemento 2&lt;/li&gt;
+	&lt;/ul&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;ol&gt;</h3>
+					<p>Define una lista ordenada.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;ol&gt;
+		&lt;li&gt;Elemento 1&lt;/li&gt;
+		&lt;li&gt;Elemento 2&lt;/li&gt;
+	&lt;/ol&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;li&gt;</h3>
+					<p>Define un elemento de lista dentro de &lt;ul&gt; o &lt;ol&gt;.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;ul&gt;
+		&lt;li&gt;Elemento 1&lt;/li&gt;
+		&lt;li&gt;Elemento 2&lt;/li&gt;
+	&lt;/ul&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;dl&gt;</h3>
+					<p>Define una lista de definiciones (término y descripción).</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;dl&gt;
+		&lt;dt&gt;Término&lt;/dt&gt;
+		&lt;dd&gt;Descripción&lt;/dd&gt;
+	&lt;/dl&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<dl>
+								<dt>Término</dt>
+								<dd>Descripción</dd>
+							</dl>
+						</div> 
+					</p>
+				</li>
+				<li>
+					<h3>&lt;dt&gt;</h3>
+					<p>Define el término dentro de &lt;dl&gt;.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;dl&gt;
+		&lt;dt&gt;Término&lt;/dt&gt;
+		&lt;dd&gt;Descripción&lt;/dd&gt;
+	&lt;/dl&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<dl>
+								<dt>Término</dt>
+								<dd>Descripción</dd>
+							</dl>
+						</div> 
+					</p>
+				</li>
+				<li>
+					<h3>&lt;dd&gt;</h3>
+					<p>Define la descripción dentro de &lt;dl&gt;.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;dl&gt;
+		&lt;dt&gt;Término&lt;/dt&gt;
+		&lt;dd&gt;Descripción&lt;/dd&gt;
+	&lt;/dl&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<dl>
+								<dt>Término</dt>
+								<dd>Descripción</dd>
+							</dl>
+						</div> 
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Etiquetas de formulario</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;form&gt;</h3>
+					<p>Define un formulario para recibir datos del usuario.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;form action="procesar.php" method="post"&gt;&lt;/form&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;input&gt;</h3>
+					<p>Define un campo de entrada para recibir información del usuario.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;input type="text" name="nombre"&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+								<p>Ingrese un texto</p>
+								<input type="text" name="nombre">
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;textarea&gt;</h3>
+					<p>Define un campo de texto multilínea para recibir información del usuario.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;textarea name="comentarios"&gt;&lt;/textarea&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+								<p>Ingrese un texto largo</p>
+								<textarea name="comentarios"></textarea>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;select&gt;</h3>
+					<p>Define una lista desplegable para que el usuario seleccione una opción.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;select name="opciones"&gt;
+		&lt;option value="1"&gt;Opción 1&lt;/option&gt;
+		&lt;option value="2"&gt;Opción 2&lt;/option&gt;
+	&lt;/select&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<select name="opciones">
+								<option value="1">Opción 1</option>
+								<option value="2">Opción 2</option>
+							</select>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;option&gt;</h3>
+					<p>Define una opción dentro de una lista desplegable (&lt;select&gt;).</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;select name="opciones"&gt;
+		&lt;option value="1"&gt;Opción 1&lt;/option&gt;
+		&lt;option value="2"&gt;Opción 2&lt;/option&gt;
+	&lt;/select&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<select name="opciones">
+								<option value="1">Opción 1</option>
+								<option value="2">Opción 2</option>
+							</select>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;button&gt;</h3>
+					<p>Define un botón.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Este es un boton</p>
+							<button type="submit">Enviar</button>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;label&gt;</h3>
+					<p>Define una etiqueta para un campo de entrada (&lt;input&gt;) o para una lista desplegable (&lt;select&gt;).</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;&lt;input type="text" name="nombre" 
+	id="nombre"&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Campo de entrada</p>
+							<label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre">
+						</div>
+					</p>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Etiquetas de multimedia</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;audio&gt;</h3>
+					<p>Inserta un archivo de audio en la página web.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;audio src="ruta/al/archivo.mp3" controls&gt;&lt;/audio&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Este es un audio</p>
+							<audio src="audio.mp3" controls></audio>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;video&gt;</h3>
+					<p>Inserta un archivo de video en la página web.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;video src="ruta/al/archivo.mp4" controls&gt;&lt;/video&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Este es un video</p>
+							<video src="video.mp4" controls style="width: 250px;"></video>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;source&gt;</h3>
+					<p>Define la fuente del archivo multimedia (&lt;audio&gt; o &lt;video&gt;).</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	- &lt;video controls&gt;&lt;source src="ruta/al/archivo.mp4" 
+	type="video/mp4"&gt;&lt;/video&gt;
+	- &lt;audio controls&gt;&lt;source src="ruta/al/archivo.mp3" 
+	type="audio/mp3"&gt;&lt;/audio&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<div class="left-div" style="background-color: #eee;">
+								<p>Este es un ejemplo de video</p>
+								<video controls style="width: 250px;"><source src="video.mp4" type="video/mp4"></video>
+							</div>
+							<div class="right-div">
+								<p>Este es un ejemplo de audio</p>
+								<audio controls style="width: 290px;"><source src="audio.mp3" type="audio/mp3"></audio>
+							</div>
+						</div>
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Etiquetas de contenido dinámico</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;script&gt;</h3>
+					<p>Define un script del lado del cliente (JavaScript).</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;script&gt;console.log("Hola, mundo");&lt;/script&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Abre la consola del navegador para ver el codigo</p>
+							<p>Debe decir "Hola, mundo"</p>
+							<script>console.log("Hola, mundo");</script>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;noscript&gt;</h3>
+					<p>Define contenido alternativo para usuarios que tengan deshabilitado JavaScript en su navegador.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;noscript&gt;Esta página requiere JavaScript para funcionar 
+	correctamente.&lt;/noscript&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;iframe&gt;</h3>
+					<p>Inserta un marco de página dentro de otra página web.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;iframe src="http://www.ejemplo.com"&gt;&lt;/iframe&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<iframe width="300"src="https://www.youtube.com/embed/z1Ik3vcUmTs" allow="web-share"></iframe>
+						</div>
+						
+					</p>
+				</li>
+				<li>
+					<h3>&lt;canvas&gt;</h3>
+					<p>Define un área gráfica para dibujar gráficos, animaciones, y más.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<canvas id="miCanvas"></canvas>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;svg&gt;</h3>
+					<p>Define gráficos vectoriales escalables.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" 
+	stroke="black" stroke-width="3" fill="red" /&gt;&lt;/svg&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /></svg>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;details&gt;</h3>
+					<p>Define un elemento que puede ser desplegado para mostrar información adicional.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;details&gt;&lt;summary&gt;Ver más información&lt;/summary&gt;&lt;p&gt;
+	Esta es la información adicional.&lt;/p&gt;&lt;/details&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<details><summary>Ver más información</summary><p>Esta es la información adicional.</p></details>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;summary&gt;</h3>
+					<p>Define un texto visible que al hacer clic despliega la información adicional definida en un elemento &lt;details&gt;.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;details&gt;&lt;summary&gt;Ver más información&lt;/summary&gt;&lt;p&gt;
+	Esta es la información adicional.&lt;/p&gt;&lt;/details&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<details><summary>Ver más información</summary><p>Esta es la información adicional.</p></details>
+						</div>
+					</p>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Etiquetas de agrupación y sección</h2>
+			<hr>
+			<ul>
+				<li>
+					<h3>&lt;div&gt;</h3>
+					<p>Define una sección genérica para agrupar elementos HTML.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;div&gt;Contenido aquí&lt;/div&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<div style="width: 150px; height: 100px; background-color: red; color: white;">Contenido aquí</div>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;span&gt;</h3>
+					<p>Define una sección genérica en línea para agrupar elementos HTML.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;Este es un &lt;span style="color: red;"&gt;texto en rojo&lt;/span&gt;. 
+	Este es un &lt;span style="font-size: 2em;"&gt;texto en grande&lt;/span&gt;.
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Este es un <span style="color: red;">texto en rojo</span>. Este es un 
+							<span style="font-size: 2em;">texto en grande</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;header&gt;</h3>
+					<p>Define la cabecera de un documento o sección.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;header&gt;Contenido de la cabecera aquí&lt;/header&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<header>Contenido de la cabecera aquí</header>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;footer&gt;</h3>
+					<p>Define el pie de página de un documento o sección.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;footer&gt;Contenido del pie de página aquí&lt;/footer&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<footer>Contenido del pie de página aquí</footer>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;main&gt;</h3>
+					<p>Define el contenido principal de un documento o sección.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;main&gt;
+		Contenido principal aquí
+	&lt;/main&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<main>Contenido principal aquí</main>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;section&gt;</h3>
+					<p>Define una sección en un documento.</p>
+					<p>Ejemplo: <div class="left-div">
+						<listing>
+	&lt;section&gt;
+		Contenido de la sección aquí
+	&lt;/section&gt;
+						</listing>
+					</div> 
+					<div class="right-div">
+						<section>
+							<h2>Section 1</h2>
+							<p>this is the text for section 1</p>
+						</section>
+						
+						<section>
+							<h2>Section 2</h2>
+							<p>this is the text for section 2</p>
+						</section>
+					</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;article&gt;</h3>
+					<p>Define un artículo independiente dentro de un documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;article&gt;
+		Contenido del artículo aquí
+	&lt;/article&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<article>
+								<h2>Article</h2>
+								<p>Este es el texto de un articulo</p>
+							</article>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;nav&gt;</h3>
+					<p>Define un conjunto de enlaces de navegación.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;nav&gt;
+		Enlaces de navegación aquí
+	&lt;/nav&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<nav>
+								<a href="/html/">HTML</a> |
+								<a href="/css/">CSS</a> |
+								<a href="/js/">JavaScript</a> |
+								<a href="/python/">Python</a>
+							</nav>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;aside&gt;</h3>
+					<p>Define contenido que es tangencial o relacionado con el contenido principal de una sección, pero que no es esencial para su comprensión.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;aside&gt;
+		Contenido adicional aquí
+	&lt;/aside&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<aside>
+								<h4>Aside</h4>
+								<p>Contenido del aside</p>
+							</aside>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;blockquote&gt;</h3>
+					<p>Define una sección que contiene una cita textual de otra fuente.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;blockquote&gt;
+		Cita textual aquí
+	&lt;/blockquote&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>Aqui hay una cita</p>
+							<blockquote cite="https://es.wikipedia.org/wiki/Descubrimiento_de_Am%C3%A9rica">
+								"America se descurbio en 12 de octubre de 1492."
+							</blockquote>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;q&gt;</h3>
+					<p>Define una cita textual corta dentro del texto.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;El poeta dijo: &lt;q&gt;La vida es un sueño&lt;/q&gt;.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>El poeta dijo: <q>La vida es un sueño</q>.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;cite&gt;</h3>
+					<p>Define el título de una obra a la que se hace referencia en un texto.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;En su libro &lt;cite&gt;El Quijote&lt;/cite&gt;, Cervantes escribió...&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>En su libro <cite>One Piece</cite>, Oda dijo...</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;dfn&gt;</h3>
+					<p>Define un término que se va a definir en un documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;La palabra &lt;dfn&gt;reticulado&lt;/dfn&gt; se refiere a 
+	una estructura de mallas.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>La palabra <dfn>reticulado</dfn> se refiere a una estructura de mallas.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;abbr&gt;</h3>
+					<p>Define una abreviatura o acrónimo.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;La &lt;abbr title="Universidad autonoma de Santo Domingo"
+	&gt;UASD&lt;/abbr&gt; es mi universidad.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>La <abbr title="Universidad autonoma de Santo Domingo">UASD</abbr> es una organización internacional.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;address&gt;</h3>
+					<p>Define la información de contacto del autor o propietario de un documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;address&gt;Nombre del autor, dirección y correo electrónico&lt;/address&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<address>Dariyank Sanquintin, calle primera, SD y dariyank@fake.com</address>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;bdi&gt;</h3>
+					<p>Define una sección de texto que debe ser aislada del texto circundante para su procesamiento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;Precio: &lt;bdi&gt;$1500&lt;/bdi&gt; dólares.&lt;/p&gt;>
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>Precio: <bdi>$1500</bdi> dólares.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;bdo&gt;</h3>
+					<p>Define la dirección de un texto.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+	&lt;bdo dir="rtl"&lt;Texto de derecha a izquierda&lt;/bdo&lt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<bdo dir="rtl">Texto de derecha a izquierda</bdo>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;var&gt;</h3>
+					<p>Define una variable en un texto o fórmula.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;La fórmula para calcular el área es &lt;var&gt;base x altura&lt;/var&gt;.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>La fórmula para calcular el área es <var>base x altura</var>.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;code&gt;</h3>
+					<p>Define un fragmento de código de programación.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;Para imprimir un mensaje en la consola, usa &lt;code&gt;
+	console.log()&lt;/code&gt;.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>Para imprimir un mensaje en la consola, usa <code>console.log()</code>.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;kbd&gt;</h3>
+					<p>Define una entrada de teclado en un texto.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;Presiona &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt;
+	+ &lt;kbd&gt;Supr&lt;/kbd&gt; para reiniciar el equipo.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>Presiona <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Supr</kbd> para reiniciar el equipo.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;samp&gt;</h3>
+					<p>Define un ejemplo o muestra de salida de un programa.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;El resultado de la operación es &lt;samp&gt;15.67&lt;/samp&gt;.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>El resultado de la operación es <samp>15.67</samp>.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;sub&gt;</h3>
+					<p>Define texto en subíndice.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;La fórmula química del agua es H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>La fórmula química del agua es H<sub>2</sub>O.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;sup&gt;</h3>
+					<p>Define texto en superíndice.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;p&gt;El &lt;sup&gt;2&lt;/sup&gt; de febrero es el Día de la Candelaria.&lt;/p&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<p>El 2<sup>do</sup> dia de febrero es el Día de la Candelaria.</p>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;pre&gt;</h3>
+					<p>Define texto preformateado, preservando los espacios en blanco y saltos de línea.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;pre&gt;
+		Texto en un elemento previo
+		se muestra en un ancho fijo
+		fuente, y conserva
+		ambos       espacios y
+		saltos de línea
+	&lt;/pre&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<pre>
+	Texto en un elemento previo
+	se muestra en un ancho fijo
+	fuente, y conserva
+	ambos       espacios y
+	saltos de línea
+							</pre>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;listing&gt;</h3>
+					<p>Define una lista de elementos preformateados, preservando los espacios en blanco y saltos de línea.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;listing&gt;
+			Primer elemento
+		Segundo elemento
+						Tercer elemento
+	&lt;/listing&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<listing>
+			Primer elemento
+		Segundo elemento
+					Tercer elemento
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;xmp&gt;</h3>
+					<p>Define texto preformateado, preservando los espacios en blanco y saltos de línea, y mostrando todos los elementos HTML tal cual.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;xmp&gt;<p>Este texto no se procesa.</p>&lt;/xmp&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<xmp><p>Este texto no se procesa.</p></xmp>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;style&gt;</h3>
+					<p>Define una sección de estilos CSS para el documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;style&gt;
+		.styleExample{
+			width: 150px;
+			height: 100px;
+			color: white;
+			background-color: blue;
+			border-color: red;
+		}
+	&lt;/style&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<div class="styleExample">Here</div>
+							<style>
+								.styleExample{
+									width: 150px;
+									height: 200px;
+									color: white;
+									background-color: blue;
+									border-color: red;
+								}
+							</style>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;title&gt;</h3>
+					<p>Define el título del documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;title&gt;Título del documento&lt;/title&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;base&gt;</h3>
+					<p>Define la URL base para los enlaces del documento.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;base href="http://www.ejemplo.com/"&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;meta&gt;</h3>
+					<p>Define metadatos del documento, como la descripción, autor, palabras clave, entre otros.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;meta name="description" content="Descripción del documento"&gt;
+							</listing>
+						</div> 
+					</p>
+				</li>
+				<li>
+					<h3>&lt;link&gt;</h3>
+					<p>Define un enlace a un archivo externo, como una hoja de estilos CSS o un archivo de icono.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;link rel="tipo_de_recurso" href="ubicación_del_recurso" 
+	[atributos adicionales]&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;dialog&gt;</h3>
+					<p>Define un cuadro de diálogo o subventana</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;dialog open&gt;This is an open dialog window&lt;/dialog&gt;
+							</listing>
+						</div>
+						<div>
+							<dialog open>This is an open dialog window</dialog>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;slot&gt;</h3>
+					<p>Es un marcador de posición dentro de un componente web que puede llenar con su propio marcado,
+					lo que le permite crear árboles DOM separados y presentarlos juntos.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;slot name="username"&gt;&lt;/slot&gt;
+							</listing>
+						</div> 
+					</p>
+				</li>
+				<li>
+					<h3>&lt;menu&gt;</h3>
+					<p>Define una lista/menú de comandos. Se utiliza para menús contextuales, barras de
+					herramientas y para enumerar controles y comandos de formularios.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;menu&gt;
+		&lt;menuitem&gt;
+		&lt;/menuitem&gt;
+	&lt;menu&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;menuitem&gt;</h3>
+					<p>Define un comando/elemento de menú que el usuario puede invocar desde un menú emergente.</p>
+					<p>Ejemplo:  
+						<div class="left-div">
+							<listing>
+	&lt;menu&gt;
+		&lt;menuitem&gt;
+		&lt;/menuitem&gt;
+	&lt;menu&gt;
+							</listing>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;meter&gt;</h3>
+					<p>Define una medida escalar dentro de un rango conocido, o un valor fraccionario. 
+					Esto también se conoce como calibre.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;label for="disk_c"&gt;Disk usage C:&lt;/label&gt;
+	&lt;meter id="disk_c" value="2" min="0" max="10"&gt;2 out of 10&lt;/meter&gt;
+							</listing>
+						</div> 
+						<div class="right-div">
+							<label for="disk_c">Disk usage C:</label>
+							<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;progress&gt;</h3>
+					<p>Representa el progreso de finalización de una tarea.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;label for="file"&gt;Downloading progress:&lt;/label&gt;
+	&lt;progress id="file" value="32" max="100"&gt;32%&lt;/progress&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<label for="file">Downloading progress:</label>
+							<progress id="file" value="32" max="100">32%</progress>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;output&gt;</h3>
+					<p>Se utiliza para representar el resultado de un cálculo (como uno realizado 
+					por un script)</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+		&lt;input type="range" id="a" value="50"&gt;
+		+&lt;input type="number" id="b" value="25"&gt;
+		=&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+	&lt;/form&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+								<input type="range" id="a" value="50">
+								+<input type="number" id="b" value="25">
+								=<output name="x" for="a b"></output>
+							</form>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;optgroup&gt;</h3>
+					<p>Se utiliza para agrupar opciones relacionadas en un elemento &lt;select&gt;
+					(lista desplegable)</p>
+					<p>Ejemplo:
+						<div
+						class="left-div">
+							<listing>
+	&lt;label for="ejemplo"&gt;Selector ejemplo:&lt;/label&gt;
+	&lt;select  name="ejemplos" id="ejemplos"&gt;
+	&lt;optgroup label="optiones1"&gt;
+		&lt;option value="opcion1"&gt;opcion&lt;/option&gt;
+		&lt;option value="option2"&gt;opcion&lt;/option&gt;
+	&lt;/optgroup&lt;
+	&lt;optgroup label="opciones2"&gt;
+		&lt;option value="opcion1"&gt;opcion1&lt;/option&gt;
+		&lt;option value="opcion2"&gt;opcion2&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;/select&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<label for="ejemplo"&gt;Selector ejemplo:</label>
+							<select  name="ejemplos" id="ejemplos">
+							<optgroup label="optiones1">
+								<option value="opcion1">opcion</option>
+								<option value="option2">opcion</option>
+							</optgroup>
+							<optgroup label="opciones2">
+								<option value="opcion1">opcion1</option>
+								<option value="opcion2">opcion2</option>
+							</optgroup>
+							</select>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;datalist&gt;</h3>
+					<p>Se utiliza para proporcionar una función de "autocompletar" para los elementos 
+					&lt;input&gt;. Los usuarios verán una lista desplegable de opciones predefinidas a 
+					medida que ingresan datos.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;label for="ejemplo"&gt;Ejemplo opciones data:&lt;/label&gt;
+	&lt;input list="ejemplo" name="ejemplo" id="ejemplo"&gt;
+
+	&lt;datalist id="ejemplos"&gt;
+		&lt;option value="opcion1"&gt;
+		&lt;option value="opcion2"&gt;
+		&lt;option value="opcion3"&gt;
+		&lt;option value="opcion4"&gt;
+		&lt;option value="opcion5"&gt;
+	&lt;/datalist&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<label for="ejemplo">Ejemplo opciones data:</label>
+							<input list="ejemplo" name="ejemplo" id="ejemplo">
+
+							<datalist id="ejemplos">
+								<option value="opcion1">
+								<option value="opcion2">
+								<option value="opcion3">
+								<option value="opcion4">
+								<option value="opcion5">
+							</datalist>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;data&gt;</h3>
+					<p>Se utiliza para agregar una traducción legible por máquina de un contenido determinado.</p>
+					<p>Ejemplo: 
+						<div class="left-div">
+							<listing>
+	&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<data value="21053">Cherry Tomato</data>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;legend&gt;</h3>
+					<p>Define un título para el elemento &lt;fieldset&gt;.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;form action="/action_page.php"&gt;
+		&lt;fieldset&gt;
+			&lt;legend&gt;Personalia:&lt;/legend&gt;
+			&lt;label for="fname"&gt;First name:&lt;/label&gt;
+			&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+		&lt;/fieldset&gt;
+	&lt;/form&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<form action="/action_page.php">
+								<fieldset>
+									<legend>Personalia:</legend>
+									<label for="fname">First name:</label>
+									<input type="text" id="fname" name="fname"><br><br>
+								</fieldset>
+							</form>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;fieldset&gt;</h3>
+					<p>Se utiliza para agrupar elementos relacionados en un formulario. 
+					Dibuja un cuadro alrededor de los elementos relacionados.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;form action="/action_page.php"&gt;
+		&lt;fieldset&gt;
+			&lt;legend&gt;Personalia:&lt;/legend&gt;
+			&lt;label for="fname"&gt;First name:&lt;/label&gt;
+			&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+		&lt;/fieldset&gt;
+	&lt;/form&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<form action="/action_page.php">
+								<fieldset>
+									<legend>Personalia:</legend>
+									<label for="fname">First name:</label>
+									<input type="text" id="fname" name="fname"><br><br>
+								</fieldset>
+							</form>
+						</div>
+					</p>
+				</li>
+			</ul>		
+		</section>
+		<section>
+			<h2>Operaciones Matematicas</h2>
+			<hr>
+			<ul>
+				<div class="left-div" style="background-color: #b4b4b4;">
+					<li>
+						<h3>&lt;math&gt;</h3>
+						<p>Se utiliza para escribir una sola fórmula matemática</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;mrow&gt;</h3>
+						<p>Se utiliza para agrupar subexpresiones, que suelen contener uno
+						o más operadores con sus respectivos operandos</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;msup&gt;</h3>
+						<p>Se utiliza para adjuntar un superíndice a una expresión.</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;mi&gt;</h3>
+						<p>Indica que el contenido debe representarse como un identificador, 
+						como nombres de funciones, variables o constantes simbólicas.</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;mo&gt;</h3>
+						<p>Representa un operador en un sentido amplio. Además de los operadores 
+						en sentido matemático estricto, este elemento también incluye "operadores" 
+						como paréntesis, separadores como coma y punto y coma, o barras de "valor 
+						absoluto".</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;mn&gt;</h3>
+						<p>Represents a numeric literal which is normally a sequence of digits 
+						with a possible separator (a dot or a comma).</p>
+						<p></p>
+					</li>
+				</div>
+				<div class="right-div">
+					<div>
+						<p>Ejemplo general:
+							<listing>
+	&lt;math&gt;
+		&lt;mrow&gt;
+			&lt;mrow&gt;
+				&lt;msup&gt;
+					&lt;mi&gt;x&lt;/mi&gt;
+					&lt;mn&gt;2&lt;/mn&gt;
+				&lt;/msup&gt;
+				&lt;mo&gt;+&lt;/mo&gt;
+				&lt;msup&gt;
+					&lt;mi&gt;y&lt;/mi&gt;
+					&lt;mn&gt;2&lt;/mn&gt;
+				&lt;/msup&gt;
+			&lt;/mrow&gt;
+			&lt;mo&gt;=&lt;/mo&gt;
+			&lt;msup&gt;
+				&lt;mi&gt;z&lt;/mi&gt;
+				&lt;mn&gt;2&lt;/mn&gt;
+			&lt;/msup&gt;
+		&lt;/mrow&gt;
+	&lt;/math&gt;
+							</listing>
+						</p>
+					</div>
+					<div style="background-color:#ccc; border-radius: 10px; padding: 5px;">
+						<math>
+							<mrow>
+								<mrow>
+									<msup>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<msup>
+										<mi>y</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+								<mo>=</mo>
+								<msup>
+									<mi>z</mi>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+						</math>
+					</div>
+				</div>
+				<li>
+					<h3>&lt;merror&gt;</h3>
+					<p>El elemento se utiliza para mostrar contenidos como mensajes de error</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;math display="block"&gt;
+		&lt;mfrac&gt;
+			&lt;merror&gt;
+				&lt;mtext&gt;Syntax error: \frac{1}&lt;/mtext&gt;
+			&lt;/merror&gt;
+			&lt;mn&gt;3&lt;/mn&gt;
+		&lt;/mfrac&gt;
+	&lt;/math&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<mfrac>
+									<merror>
+										<mtext>Syntax error: \frac{1}</mtext>
+									</merror>
+									<mn>3</mn>
+								</mfrac>
+							</math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;mfrac&gt;</h3>
+					<p>Se utiliza para mostrar fracciones. También se puede usar para marcar objetos
+					similares a fracciones, como coeficientes binomiales y símbolos de Legendre.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;math display="block"&gt;
+		&lt;mfrac&gt;
+			&lt;mrow&gt;
+				&lt;mn&gt;2&lt;/mn&gt;
+			&lt;/mrow&gt;
+			&lt;mrow&gt;
+				&lt;mn&gt;3&lt;/mn&gt;
+			&lt;/mrow&gt;
+		&lt;/mfrac&gt;
+	&lt;/math&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<mfrac>
+									<mrow>
+										<mn>2</mn>
+									</mrow>
+									<mrow>
+										<mn>3</mn>
+									</mrow>
+								</mfrac>
+							</math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;mover&gt;</h3>
+					<p>Se utiliza para añadir un acento o un límite sobre una expresión.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;math display="block"&gt;
+			&lt;mover accent="true"&gt;
+				&lt;mrow&gt;
+					&lt;mi&gt;x&lt;/mi&gt;
+					&lt;mo&gt;+&lt;/mo&gt;
+					&lt;mi&gt;y&lt;/mi&gt;
+					&lt;mo&gt;+&lt;/mo&gt;
+					&lt;mi&gt;z&lt;/mi&gt;
+				&lt;/mrow&gt;
+				&lt;mo&gt;&#x23DE;&lt;!--Llave arriba de la formula--&gt;&lt;/mo&gt;
+			&lt;/mover&gt;
+	&lt;/math&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<mover accent="true">
+								  <mrow>
+									<mi>x</mi>
+									<mo>+</mo>
+									<mi>y</mi>
+									<mo>+</mo>
+									<mi>z</mi>
+								  </mrow>
+								  <mo>&#x23DE;<!--Llave arriba de la formula--></mo>
+								</mover>
+							  </math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;mphantom&gt;</h3>
+					<p>Se representa de forma invisible, pero las dimensiones (como la altura, 
+					el ancho y la posición de la línea de base) aún se mantienen.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;math display="block"&gt;
+		&lt;mrow&gt;
+			&lt;mi&gt;x&lt;/mi&gt;
+			&lt;mo&gt;+&lt;/mo&gt;
+			&lt;mphantom&gt;
+				&lt;mi&gt;y&lt;/mi&gt;
+				&lt;mo&gt;+&lt;/mo&gt;
+			&lt;/mphantom&gt;
+			&lt;mi&gt;z&lt;/mi&gt;
+		&lt;/mrow&gt;
+	&lt;/math&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<mrow>
+									<mi>x</mi>
+									<mo>+</mo>
+									<mphantom>
+										<mi>y</mi>
+										<mo>+</mo>
+									</mphantom>
+									<mi>z</mi>
+								</mrow>
+							</math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;mroot&gt;</h3>
+					<p>Se utiliza para mostrar raíces con un índice explícito</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;math display="block">
+		&lt;mroot&gt;
+			&lt;mi&gt;x&lt;/mi&gt;
+			&lt;mn&gt;3&lt;/mn&gt;
+		&lt;/mroot&gt;
+	&lt;/math&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<mroot>
+									<mi>x</mi>
+									<mn>3</mn>
+								</mroot>
+							</math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;msqrt&gt;</h3>
+					<p>Se utiliza para mostrar raíces cuadradas (no se muestra ningún índice)</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;math display="block"&gt;
+		&lt;msqrt&gt;
+			&lt;mi&gt;x&lt;/mi&gt;
+		&lt;/msqrt&gt;
+	&lt;/math&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<msqrt>
+									<mi>x</mi>
+								</msqrt>
+							</math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;mstyle&gt;</h3>
+					<p>Se utiliza para cambiar el estilo de sus hijos.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;mstyle displaystyle="false" mathcolor="teal"&gt;
+		//codigo para operacion matematica
+	&lt;/mstyle&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<p>Ejemplo de mstyle</p>
+							<math display="block">
+								<mstyle displaystyle="false" mathcolor="teal">
+								  <munder>
+									<mo>∑</mo>
+									<mi>I</mi>
+								  </munder>
+								  <munderover>
+									<mo>∏</mo>
+									<mrow>
+									  <mi>i</mi>
+									  <mo>=</mo>
+									  <mn>1</mn>
+									</mrow>
+									<mi>N</mi>
+								  </munderover>
+								</mstyle>
+							  </math>
+						</div>
+					</p>
+				</li>
+				<li>
+					<h3>&lt;mtext&gt;</h3>
+					<p>Se utiliza para representar texto arbitrario sin significado notacional, 
+					como comentarios o anotaciones.</p>
+					<p>Ejemplo:
+						<div class="left-div">
+							<listing>
+	&lt;mtext&gt;/* comment here */&lt;/mtext&gt;
+							</listing>
+						</div>
+						<div class="right-div">
+							<math display="block">
+								<mtext>Theorem of Pythagoras</mtext>
+							</math>
+						</div>
+					</p>
+				</li>
+			</ul>		
+		</section>
+		<section>
+			<h2>Etiquetas de tabla</h2>
+			<hr>
+			<ul>
+				<div class="left-div" style="background-color: #b4b4b4;">
+					<li>
+						<h3>&lt;table&gt;</h3>
+						<p>Define una tabla. Todo el contenido dentro de esta etiqueta se definira como parte de una tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;thead&gt;</h3>
+						<p>Agrupa el contenido del encabezado en una tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;tbody&gt;</h3>
+						<p>Agrupa el contenido del cuerpo en una tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;th&gt;</h3>
+						<p>Define una celda de encabezado en una tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;tr&gt;</h3>
+						<p>Define una fila en una tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;td&gt;</h3>
+						<p>Define una celda en una tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;caption&gt;</h3>
+						<p>Define un título de tabla</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;colgroup&gt;</h3>
+						<p>Especifica un grupo de una o más columnas en una tabla para formatear</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;col&gt;</h3>
+						<p>Especifica propiedades de columna para cada columna dentro de un elemento &lt;colgroup&gt;</p>
+						<p></p>
+					</li>
+					<li>
+						<h3>&lt;tfoot&gt;</h3>
+						<p>Agrupa el contenido del pie de página en una tabla</p>
+						<p></p>
+					</li>
+				</div>
+				<div class="right-div">Ejemplo general:
+					<div style="background-color: #eee; border-radius: 10px; padding: 5px; margin-bottom: 5px; margin-top: 15px;">
+						<listing>
+&lt;table&gt;
+	&lt;caption&gt;Caption table&lt;/caption&gt;
+	&lt;colgroup&gt;
+		&lt;col span="2" style="background-color:red"&gt;
+	&lt;/colgroup&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;columna1&lt;/th&gt;
+			&lt;th&gt;columna2&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;dato1&lt;/td&gt;
+			&lt;td&gt;dato2&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;dato3&lt;/td&gt;
+			&lt;td&gt;dato4&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Este es el footer&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+&lt;/table&gt;
+						</listing>
+					</div>
+					<div style="background-color: #ccc; border-radius: 10px; padding: 5px;">
+						<table>
+							<caption style="border: 1px solid black; font-weight: 600;">Caption table</caption>
+							<colgroup>
+								<col span="2" style="background-color: #eee">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>columna1</th>
+									<th>columna2</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr >
+									<td>dato1</td>
+									<td>dato2</td>
+								</tr>
+								<tr >
+									<td>dato3</td>
+									<td>dato4</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">Este es el footer</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</ul>
+		</section>
+	<main>
+</body>
+</html>
