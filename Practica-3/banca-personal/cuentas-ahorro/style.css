@@ -247,11 +247,11 @@ ol li{
 }
 
 ol li:nth-child(2n+1){
-    background-color: rgb(101, 123, 233);
+    background-color: #003a6d;
 }
 
 ol li:nth-child(2n){
-    background-color: rgb(59, 99, 241);
+    background-color: #264e72;
 }
 
 ol li::before{
