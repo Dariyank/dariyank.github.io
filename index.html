@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Menú con botones personalizados</title>
-	<style>
-		.btn-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-		.btn {
-			padding-left: 35px;
-			padding-right: 35px;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			margin: 10px;
-			background-color: #0839c0;
-			color: white;
-			border-radius: 10px;
-			cursor: pointer;
-			font-size: 24px;
-			text-align: center;
-			text-decoration: none;
-		}
-		.btn:hover {
-			background-color: #0f71e0;
-		}
-		.header {
-			background-color: #f2f2f2;
-			padding: 20px;
-			text-align: center;
-			margin-bottom: 30px;
-			border: 3px solid black;
-		}
-		h1 {
-			font-size: 40px;
-			margin: 0;
-			margin-bottom: 10px;
-		}
-		p {
-			font-size: 18px;
-			margin: 0;
-		}
-	</style>
-	</style>
-</head>
-<body>
-	<div class="header">
-		<h1>Lab. Lenguage de Programación III</h1>
-		<p>Dariyak Jovanny Sanquintin Rodriguez | 100455600 | Licenciatura en informatica</p>
-	</div>
-	<div class="btn-container">
-		<a href="Practica-1/index.html" class="btn">Practica 1</a>
-		<a href="Practica-2/index.html" class="btn">Practica 2</a>
-		<a href="Practica-3/index.html" class="btn">Practica 3</a>
-	</div>
-</body>
+	<head>
+		<title>Menú con botones personalizados</title>
+		<style>
+			body{
+				margin: 0;
+			}
+
+			.btn-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.btn {
+				padding-left: 35px;
+				padding-right: 35px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin: 10px;
+				background-color: #0839c0;
+				color: white;
+				border-radius: 10px;
+				cursor: pointer;
+				font-size: 24px;
+				text-align: center;
+				text-decoration: none;
+			}
+			.btn:hover {
+				background-color: #0f71e0;
+			}
+			.header {
+				background-color: #f2f2f2;
+				margin: 25px;
+				padding: 20px;
+				text-align: center;
+				margin-bottom: 30px;
+				border: 3px solid black;
+			}
+			h1 {
+				font-size: 40px;
+				margin: 0;
+				margin-bottom: 10px;
+			}
+			p {
+				font-size: 18px;
+				margin: 0;
+			}
+			footer div{
+				margin-top: 30px;
+				position: absolute;
+				width: 100%;
+				object-fit: cover;
+				height: 20rem;
+				background-image: url('footer.jpeg');
+				background-position: center;
+				background-size: cover;
+			}
+		</style>
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Lab. Lenguage de Programación III</h1>
+			<p>Dariyak Jovanny Sanquintin Rodriguez | 100455600 | Licenciatura en informatica</p>
+		</div>
+		<div class="btn-container">
+			<a href="Practica-1/index.html" class="btn">Practica 1</a>
+			<a href="Practica-2/index.html" class="btn">Practica 2</a>
+			<a href="Practica-3/index.html" class="btn">Practica 3</a>
+		</div>
+	</body>
+	<footer>
+		<div></div>
+	</footer>
 </html>
