@@ -235,9 +235,14 @@ hr{
     width: 9px;
 }
 
+.requisitos{
+    margin-left: 5%;
+}
+
 .requisito{
     color: white;
     padding: 20px;
+    width: 80%;
     margin-bottom: 5px;
     border-radius: 15px;
 }

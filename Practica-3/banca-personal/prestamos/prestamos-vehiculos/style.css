@@ -236,13 +236,13 @@ hr{
 }
 
 .requisitos{
-    margin-left: 23%;
+    margin-left: 5%;
 }
 
 .requisito{
     color: white;
     padding: 20px;
-    width: 60%;
+    width: 80%;
     margin-bottom: 5px;
     border-radius: 15px;
 }
