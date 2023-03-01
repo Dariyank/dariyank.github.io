@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ========== Este es el diseño para el boton del logo ========== */
+.dolar-euro-precio{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #003a6d;
+}
+
+.dolar-euro-precio p{
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    margin: 0 auto;
+    height: 100%;
+    left: 39.85%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 3px;
+    border: none;
+}
+
+.btn img {
+    width: 200px;
+    height: 125px;
+}
+
+.logo{
+    display: grid;
+    place-items: center;
+}
+
+/* ========== Este es el diseño para el nav bar ========== */
+nav {
+    background-color: #003a6d;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    position: relative;   
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    width: 200px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+nav ul ul li {
+    display: block;
+    width: 100%;
+}
+
+.option:hover{
+    background-color: #ccc;
+}
+
+nav ul ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav ul ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    left: 100%;
+    top: 0;
+}
+
+nav ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+nav ul ul ul li {
+    display: block;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul ul ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav ul ul ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    width: 100%;
+}
+
+/* ========== Cuerpo de la pagina, imagen ========== */
+main{
+    margin-top: 3px;
+    position: relative;
+}
+
+.imagen-fondo {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.sombra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 20px 20px rgba(0,0,0,0.5);
+    z-index: -1;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.15) 15%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,1) 100%);
+  }
+
+.imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    background-image: url('prestamos-hipotecarios.jpeg');
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+  }
+
+.titulo-contenedor {
+    position: absolute;
+    margin-left: 5%;
+    bottom: 20px;
+    left: 20px;
+}
+
+.titulo-texto{
+    color: #fff;
+    font-size: 60px;
+}
+
+/* ========== Cuerpo de la pagina, informacion ========== */
+hr{
+    width: 80%;
+}
+
+.titulo-info{
+    display: grid;
+    place-items: center;
+    color: #003a6d;
+    font-size: 45px;
+}
+
+.contenido-info{
+    display: grid;
+    place-items: center;
+}
+
+.descripcion-info{
+    width: 85%;
+    font-size: 20px;
+    text-align: center;
+}
+.beneficios{
+    width: 55%;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.beneficio{
+    font-size: 20px;
+    padding: 0 0px 2px 0px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.beneficio::before{
+    background: #264e72;
+    border-radius: 50%;
+    content: '';
+    height: 9px;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: -20px;
+    margin-right: 11px;
+    width: 9px;
+}
+
+.requisitos{
+    margin-left: 23%;
+}
+
+.requisito{
+    color: white;
+    padding: 20px;
+    width: 60%;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.requisito:nth-child(2n+1){
+    background-color: #003a6d;
+}
+
+.requisito:nth-child(2n){
+    background-color: #264e72;
+}
+
+.requisito::before{
+    background: white;
+    content: '';
+    height: 9px;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 11px;
+    width: 9px;
+}
+
+.tarifa{
+    width: 40%;
+    display: grid;
+    place-items: right;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 2px;
+    font-family: "freight_sansbook", sans-serif;
+    font-size: 1em;
+    color: #264e72;
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr:nth-child(2n+1){
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background-color: rgb(223, 222, 222);
+}
+
+td{
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.tarifa-dato{
+    width: 70%;
+    text-align: left;
+}
+
+.tarifa-dato-2{
+    width: 30%;
+}
+
+/* ========== Pie de la pagina, imagen ========== */
+footer{
+    background-color: #003a6d;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.centered{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.division-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px auto;
+}
+
+.footer-espacio{
+    width: 30%;
+    padding: 10px auto;
+}
+
+.footer-espacio h3, .footer-espacio p{
+    color: white;
+    text-align: center;
+}
+
+.clase-informacion{
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+.linea{
+    width: 2px;
+    height: 50px;
+    background-color: #ccc;
+    margin-left: 1.5%;
+}
