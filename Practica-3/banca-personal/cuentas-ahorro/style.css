@@ -311,3 +311,10 @@ footer{
     margin-top: 5%;
     font-size: 15px;
 }
+
+.linea{
+    width: 2px;
+    height: 50px;
+    background-color: #ccc;
+    margin-left: 1.5%;
+}
