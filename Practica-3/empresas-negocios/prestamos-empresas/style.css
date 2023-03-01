@@ -165,7 +165,7 @@ main{
     width: 100%;
     object-fit: cover;
     height: 100%;
-    background-image: url('cuentas-de-ahorro.jpg');
+    background-image: url('prestamos-empresariales.png');
     background-position: center;
     background-size: cover;
     z-index: -2;
@@ -236,15 +236,24 @@ hr{
 }
 
 .requisitos{
-    list-style: none;
-    width: 40%;
+    margin-left: 10%;
 }
 
 .requisito{
     color: white;
     padding: 20px;
+    width: 80%;
     margin-bottom: 5px;
     border-radius: 15px;
+}
+
+.sub-requisito{
+    color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px;
+    list-style: none;
+    background-color: #003a6d;
 }
 
 .requisito:nth-child(2n+1){
@@ -255,7 +264,7 @@ hr{
     background-color: #264e72;
 }
 
-.requisito::before{
+.requisito::before, .sub-requisito::before{
     background: white;
     content: '';
     height: 9px;
@@ -265,6 +274,49 @@ hr{
     margin-top: -2px;
     margin-right: 11px;
     width: 9px;
+}
+
+.tarifa{
+    width: 40%;
+    display: grid;
+    place-items: right;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 2px;
+    font-family: "freight_sansbook", sans-serif;
+    font-size: 1em;
+    color: #264e72;
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr:nth-child(2n+1){
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background-color: rgb(223, 222, 222);
+}
+
+td{
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.tarifa-dato{
+    width: 70%;
+    text-align: left;
+}
+
+.tarifa-dato-2{
+    width: 30%;
 }
 
 /* ========== Pie de la pagina, imagen ========== */
