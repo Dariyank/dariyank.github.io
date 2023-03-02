@@ -26,27 +26,28 @@ document.addEventListener('DOMContentLoaded', function() {
         if (verificadorCalculado === verificadorCedula) {
           return 'Cédula válida';
         } else {
-          return 'Cédula inválida. Verifique o ingrese otra';
+          return 'Cédula inválida';
         }
       }
 
     const botonValidar = document.getElementById('validar');
     const inputCedula = document.getElementById('cedula');
     const resultado = document.getElementById('resultado');
+    const aviso = document.getElementById('aviso');
   
     botonValidar.addEventListener('click', function() {
         const cedula = inputCedula.value;
         const mensaje = validarCedula(cedula);
         if(mensaje == 'Cédula válida'){
-            resultado.classList.remove("error");
-            resultado.classList.add("exito");
             resultado.style.display = 'block';
             resultado.style.color = 'green';
         }else{
-            resultado.classList.remove("exito");
-            resultado.classList.add("error");
-            resultado.style.display = 'block';
             resultado.style.color = 'red';
+            resultado.style.display = 'block';
+            aviso.textContent = 'Verifique la cedula o ingrese otra';
+            aviso.style.color = 'red';
+            aviso.style.display = 'block';
+
         }
         resultado.textContent = mensaje;
     });
