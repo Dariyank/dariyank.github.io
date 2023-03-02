@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(mensaje == 'Cédula válida'){
             resultado.style.display = 'block';
             resultado.style.color = 'green';
+            aviso.style.display = 'none';
         }else{
             resultado.style.color = 'red';
             resultado.style.display = 'block';
