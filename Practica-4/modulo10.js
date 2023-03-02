@@ -38,13 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const mensaje = validarCedula(cedula);
 		console.log(mensaje);
         if(mensaje == 'Cédula válida' && cedula != ''){
+			resultado.textContent = mensaje;
             resultado.style.display = 'block';
             resultado.style.color = 'green';
             aviso.style.display = 'none';
         }else if(cedula === ''){
-			resultado.textContent = '';
-            resultado.style.display = 'none';
+			resultado.textContent = 'La cédula no puede estar en blanco';
+            resultado.style.color = 'blue';
+            resultado.style.display = 'block';
 		}else{
+			resultado.textContent = mensaje;
             resultado.style.color = 'red';
             resultado.style.display = 'block';
             aviso.textContent = 'Verifique la cédula o ingrese otra';
@@ -52,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
             aviso.style.display = 'block';
 
         }
-        resultado.textContent = mensaje;
     });
 
 	inputCedula.addEventListener("keypress", function(event){
