@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
             resultado.style.display = 'block';
             resultado.style.color = 'green';
             aviso.style.display = 'none';
-        }else{
+        }else if(mensaje === ''){
+            resultado.style.display = 'none';
+		}else{
             resultado.style.color = 'red';
             resultado.style.display = 'block';
-            aviso.textContent = 'Verifique la cedula o ingrese otra';
+            aviso.textContent = 'Verifique la cédula o ingrese otra';
             aviso.style.color = 'red';
             aviso.style.display = 'block';
 
@@ -57,4 +59,22 @@ document.addEventListener('DOMContentLoaded', function() {
 			botonValidar.click();
 		}
 	});
+
+	inputCedula.addEventListener('keydown', function(event) {
+		if (!/[\d]/.test(event.key) && event.key !== 'Enter' && event.key !== 'Backspace' && event.key !== 'Delete' && event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') {
+		  event.preventDefault();
+		}
+	  });
+
+	inputCedula.addEventListener('input', function(event) {
+		let valor = this.value;
+		valor = valor.replace(/-/g, '');
+		if (valor.length > 3) {
+		  valor = valor.slice(0, 3) + '-' + valor.slice(3);
+		}
+		if (valor.length > 11) {
+		  valor = valor.slice(0, 11) + '-' + valor.slice(11);
+		}
+		this.value = valor;
+	  });
 });
