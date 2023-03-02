@@ -36,11 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
     botonValidar.addEventListener("click", function() {
         const cedula = inputCedula.value;
         const mensaje = validarCedula(cedula);
-        if(mensaje == 'Cédula válida'){
+		console.log(mensaje);
+        if(mensaje == 'Cédula válida' && cedula != ''){
             resultado.style.display = 'block';
             resultado.style.color = 'green';
             aviso.style.display = 'none';
-        }else if(mensaje === ''){
+        }else if(cedula === ''){
+			resultado.textContent = '';
             resultado.style.display = 'none';
 		}else{
             resultado.style.color = 'red';
