@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			resultado.textContent = 'La cédula no puede estar en blanco';
             resultado.style.color = 'blue';
             resultado.style.display = 'block';
+			aviso.style.display = 'none';
 		}else{
 			resultado.textContent = mensaje;
             resultado.style.color = 'red';
