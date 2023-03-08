@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const digitos = cedula.substring(0, 10);
         let suma = 0;
         for (let i = 0; i < digitos.length; i++) {
-            let num = i+1;
+            // let num = i+1;
 			let digito = parseInt(digitos[i], 10);
-			if (num % 2 == 0) {
+			if (i % 2 != 0) {
 				digito = digito * 2;
 				if (digito > 9) {
 					digito -= 9;
@@ -18,8 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			suma += digito;
         }
-
-        const verificadorCalculado = (10 - (suma % 10));
+		console.log(suma);
+		console.log(suma%10);
+		let verificadorCalculado = 0;
+        suma%10==0
+			? verificadorCalculado = suma % 10
+			: verificadorCalculado = (10 - (suma % 10));
+		console.log(verificadorCalculado)
         const verificadorCedula = parseInt(cedula[10], 11);
         if (verificadorCalculado === verificadorCedula) {
           	return 'Cédula válida';
