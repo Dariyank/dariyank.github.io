@@ -52,7 +52,7 @@ section .div-cont::before {
     right: 0;
     bottom: 0;
     background-image: inherit;
-    filter: blur(1.7px);
+    filter: blur(2px);
     z-index: -1;
 }
 section .div-cont:hover::before {
