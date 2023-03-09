@@ -1,0 +1,89 @@
+body{
+    background-image: url("img-home/background.jpg");
+    display: grid;
+    align-items: center;
+}
+.header {
+    border-radius: 25px;
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 {
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px rgba(240, 238, 238, 0.7);
+    margin: 0;
+    margin-bottom: 10px;
+}
+.header-text {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(199, 198, 198, 0.7);
+    margin: 0;
+}
+section{
+    display: flex;
+    margin:0 auto;
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 85%;
+    height: 439px;
+}
+section .div-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    border: 1px solid #fff;
+    opacity: 0.7;
+    filter: blur(0px);
+    transition: 0.5s;
+}
+section .div-cont::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    filter: blur(1.7px);
+    z-index: -1;
+}
+section .div-cont:hover::before {
+    filter: none;
+}
+section .div-cont:hover{
+    cursor: pointer;
+    width: 30%;
+    opacity: 1;
+    filter: blur(none);
+    filter: contrast(120%);
+}
+section .div-cont:hover>.pract-txt{
+    font-size: 50px;
+    display: block;
+}
+.pract-btn{
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    height: 30%;
+    -webkit-text-stroke: 1px black;
+    color: #ffffff;
+}
+.pract-txt{
+    position: absolute;
+    margin-bottom: 60%;
+    display: none;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 0px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    color: #ffffff;
+}

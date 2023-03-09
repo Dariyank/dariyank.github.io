@@ -1,77 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Menú practicas</title>
-		<style>
-			body{
-				margin: 0;
-			}
-
-			.btn-container {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-			.btn {
-				padding-left: 35px;
-				padding-right: 35px;
-				padding-top: 20px;
-				padding-bottom: 20px;
-				margin: 10px;
-				background-color: #0839c0;
-				color: white;
-				border-radius: 10px;
-				cursor: pointer;
-				font-size: 24px;
-				text-align: center;
-				text-decoration: none;
-			}
-			.btn:hover {
-				background-color: #0f71e0;
-			}
-			.header {
-				background-color: #f2f2f2;
-				margin: 25px;
-				padding: 20px;
-				text-align: center;
-				margin-bottom: 30px;
-				border: 3px solid black;
-			}
-			h1 {
-				font-size: 40px;
-				margin: 0;
-				margin-bottom: 10px;
-			}
-			p {
-				font-size: 18px;
-				margin: 0;
-			}
-			footer div{
-				margin-top: 30px;
-				position: absolute;
-				width: 100%;
-				object-fit: cover;
-				height: 20rem;
-				background-image: url('footer.jpeg');
-				background-position: center;
-				background-size: cover;
-			}
-		</style>
-		</style>
-	</head>
-	<body>
+    <head>
+        <title>Menú de botones</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 		<div class="header">
 			<h1>Lab. Lenguage de Programación III</h1>
-			<p>Dariyak Jovanny Sanquintin Rodriguez | 100455600 | Licenciatura en informatica</p>
+			<p class="header-text">Dariyak Jovanny Sanquintin Rodriguez | 100455600 | Licenciatura en informatica</p>
 		</div>
-		<div class="btn-container">
-			<a href="Practica-1/index.html" class="btn">Practica 1</a>
-			<a href="Practica-2/index.html" class="btn">Practica 2</a>
-			<a href="Practica-3/index.html" class="btn">Practica 3</a>
-			<a href="Practica-4/index.html" class="btn">Practica 4</a>
-		</div>
-	</body>
-	<footer>
-		<div></div>
-	</footer>
+            <section>
+                <div class="div-cont" style="background-image: url(img-home/p1.png);" onclick="window.location.href='Practica-1/index.html'">
+                    <p class="pract-txt">PRACTICA</p>
+                    <p class="pract-btn">1</p>
+                </div>
+                <div class="div-cont" style="background-image: url(img-home/p2.png);" onclick="window.location.href='Practica-2/index.html'">
+                    <p class="pract-txt">PRACTICA</p>
+                    <p class="pract-btn">2</p>
+                </div>
+                <div class="div-cont" style="background-image: url(img-home/p3.png);" onclick="window.location.href='Practica-3/index.html'">
+                    <p class="pract-txt">PRACTICA</p>
+                    <p class="pract-btn">3</p>
+                </div>
+                <div class="div-cont" style="background-image: url(img-home/p4.png);" onclick="window.location.href='Practica-4/index.html'">
+                    <p class="pract-txt">PRACTICA</p>
+                    <p class="pract-btn">4</p>
+                </div>
+
+                <!-- <img src="p1.png" alt="button" onclick="window.location.href='Practica-1/index.html'">
+                <img src="p2.png" alt="button" onclick="window.location.href='Practica-2/index.html'">
+                <img src="p3.png" alt="button" onclick="window.location.href='Practica-3/index.html'">
+                <img src="p4.png" alt="button" onclick="window.location.href='Practica-4/index.html'"> -->
+            </section>
+    </body>
 </html>
